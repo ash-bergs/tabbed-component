@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tabbed Components Study</title>
+  <meta name="Tabbed-components" content="">
+  <meta name="Ashley Bergsma" content="dev.to/ash_bergs">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+
+    <div class="tabs" id="TABS_ID">
+        <ul class="tabs__list" role="tablist">
+          <li
+            aria-controls="tabpanel_TABS_ID_0"
+            aria-selected="false"
+            class="tabs__item"
+            id="tab_TABS_ID_0"
+            role="tab"
+            tabindex="0"
+          >
+            Tab 1
+          </li>
+          <!-- .tabs__item -->
+      
+          <li
+            aria-controls="tabpanel_TABS_ID_1"
+            aria-selected="true"
+            class="tabs__item"
+            id="tab_TABS_ID_1"
+            role="tab"
+            tabindex="0"
+          >
+            Tab 2
+          </li>
+          <!-- .tabs__item -->
+        </ul>
+        <!-- .tabs__list -->
+      
+        <div
+          aria-hidden="true"
+          aria-labelledby="tab_TABS_ID_0"
+          class="tabs__panel"
+          id="tabpanel_TABS_ID_0"
+          role="tabpanel"
+        >
+          <p>
+            Tab 1 content
+          </p>
+        </div>
+        <!-- .tabs__panel -->
+      
+        <div
+          aria-hidden="false"
+          aria-labelledby="tab_TABS_ID_1"
+          class="tabs__panel"
+          id="tabpanel_TABS_ID_1"
+          role="tabpanel"
+        >
+          <p>
+            Tab 2 content
+          </p>
+        </div>
+        <!-- .tabs__panel -->
+      </div>
+      <!-- .tabs -->
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
