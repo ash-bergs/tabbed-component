@@ -1,6 +1,6 @@
 // Helper to mock DOM elements - handy when an element might not exist 
 //* This function provides common DOM props and methods as no-op
-// Essentially returns an object with the DOM equivalents of FALSY results. 
+// Essentially returns an object with the DOM equivalents of FALSY results. (empty object)
 
 const getDomFallback = () => {
     return {
